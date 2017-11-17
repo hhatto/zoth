@@ -1,0 +1,12 @@
+[package]
+name = "zoth"
+version = "0.1.0"
+authors = ["Hideo Hattori <hhatto.jp@gmail.com>"]
+
+[dependencies]
+clap = "2"
+rust-crypto = "0.2"
+
+[[bin]]
+name = "zothcl"
+path = "src/zothcl.rs"
