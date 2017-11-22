@@ -18,7 +18,8 @@ cat ~/relations.pu  0.00s user 0.00s system 30% cpu 0.008 total
 ## TODO
 
 * Purge Cache (zothcl with clear sub-command)
-* Configurable
+* Configurable (zothcl/zothd)
+* Server Mode (zothd)
 * HTTP Interface (zothd)
 
 ## LICENSE
