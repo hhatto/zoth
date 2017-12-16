@@ -2,11 +2,26 @@
 name = "zoth"
 version = "0.1.0"
 authors = ["Hideo Hattori <hhatto.jp@gmail.com>"]
+build = "build.rs"
 
 [dependencies]
 clap = "2"
 rust-crypto = "0.2"
+grpcio = "0.1"
+protobuf = "1.2"
+futures = "0.1"
+env_logger = "0.4"
+log = "0.3"
+chan = "0.1"
+chan-signal = "0.3"
+
+[build-dependencies]
+which = "1.0"
+
+[features]
+default = []
+genproto = []
 
 [[bin]]
-name = "zothcl"
-path = "src/zothcl.rs"
+name = "zoth"
+path = "src/main.rs"

@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package zothcore;
+
+service ZothCore {
+    rpc Exec (ExecRequest) returns (ExecResponse) {}
+    rpc ClearCache (ClearCacheRequest) returns (ClearCacheResponse) {}
+    rpc HealthCheck (HealthCheckRequest) returns (HealthCheckResponse) {};
+    rpc Shutdown (ShutdownRequest) returns (ShutdownResponse) {};
+}
+
+message ExecRequest {
+    string command = 1;
+    string args = 2;
+    string input = 3;
+}
+
+message ExecResponse {
+    string result = 1;
+}
+
+message ClearCacheRequest {
+    string command = 1;
+    string args = 2;
+    bool all = 3;
+}
+
+message ClearCacheResponse {
+}
+
+enum ServerStatus {
+    UNKNOWN = 0;
+    ALIVE = 1;
+    NOT_ALIVE = 2;
+}
+
+message HealthCheckRequest {
+}
+
+message HealthCheckResponse {
+    ServerStatus status = 1;
+}
+
+message ShutdownRequest {
+    int32 msec_after = 1;
+}
+
+message ShutdownResponse {
+}
