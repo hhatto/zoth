@@ -1,6 +1,14 @@
 # zoth
 CLI Cache Tool
 
+## Requirements
+* CMake
+
+## Installation
+```
+$ cargo install --git https://github.com/hhatto/zoth.git
+```
+
 ## Usage
 
 for example with plantuml
