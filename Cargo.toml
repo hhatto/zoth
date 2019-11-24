@@ -6,6 +6,7 @@ build = "build.rs"
 
 [dependencies]
 clap = "2"
+dirs = "2.0"
 rust-crypto = "0.2"
 grpcio = "0.1"
 protobuf = "1.2"

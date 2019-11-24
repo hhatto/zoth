@@ -92,7 +92,7 @@ impl ZothCache {
 }
 
 pub fn get_cache_root() -> String {
-    let home = env::home_dir().expect("fail get home dir");
+    let home = dirs::home_dir().expect("fail get home dir");
     let root = format!("{}/.zoth_cache", home.to_str().unwrap());
     root
 }
