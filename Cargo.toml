@@ -3,6 +3,7 @@ name = "zoth"
 version = "0.1.0"
 authors = ["Hideo Hattori <hhatto.jp@gmail.com>"]
 build = "build.rs"
+edition = "2018"
 
 [dependencies]
 clap = "2"
