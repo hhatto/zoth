@@ -30,6 +30,19 @@ cat ~/relations.pu  0.00s user 0.00s system 30% cpu 0.008 total
 * Server Mode (zothd)
 * HTTP Interface (zothd)
 
+## For Developer
+build:
+
+```console
+$ cargo build
+```
+
+build with generte grpc code:
+
+```console
+$ cargo build --features=genproto
+```
+
 ## LICENSE
 
 MIT
